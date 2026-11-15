@@ -118,7 +118,7 @@
 </p>
 
 <p align="center">
-  <img alt="GitHub contribution streak for nefsi-abdelouahab" src="https://streak-stats.demolab.com?user=nefsi-abdelouahab&background=100D25&border=362566&stroke=362566&ring=915EFF&fire=56CCF2&currStreakNum=F3F3F3&sideNums=F3F3F3&currStreakLabel=56CCF2&sideLabels=AAA6C3&dates=AAA6C3&border_radius=16">
+  <img alt="GitHub contribution streak for nefsi-abdelouahab" src="https://raw.githubusercontent.com/nefsi-abdelouahab/nefsi-abdelouahab/output/github-streak.svg">
 </p>
 
 <p align="center">

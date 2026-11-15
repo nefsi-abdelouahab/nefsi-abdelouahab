@@ -168,11 +168,10 @@ def check_workflow():
     check(wf.get("permissions", {}).get("contents") == "write", "needs permissions: contents: write")
     snk = [st for st in steps if st.get("uses", "").startswith("Platane/snk")]
     publish = [st for st in steps if st.get("uses", "").startswith("crazy-max/ghaction-github-pages")]
-    stats = [st for st in steps if "github-readme-stats-action" in st.get("uses", "")]
     check(len(snk) == 1, "needs exactly one Platane/snk step")
     check(len(publish) == 1 and publish[0]["with"].get("target_branch") == "output",
           "needs one publish step targeting the output branch")
-    written = {st["with"].get("path") for st in stats}
+    written = {(st.get("with") or {}).get("path") for st in steps}  # every card step that writes a file
     outs = snk[0]["with"].get("outputs", "").split() if snk else []
     written |= {o.split("?")[0] for o in outs}
     readme = (REPO / "README.md").read_text(encoding="utf-8")

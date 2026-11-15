@@ -3,7 +3,10 @@
 #   github-stats.svg / github-top-langs.svg    GitHub Readme Stats cards, generated here because the
 #                                              public github-readme-stats.vercel.app instance is paused
 #                                              and upstream recommends this action instead
-# All four are published together in one push: ghaction-github-pages replaces the whole branch, so a
+#   github-streak.svg                          the streak card, generated here with STATS_TOKEN because
+#                                              the hosted streak-stats.demolab.com card can only count
+#                                              public contributions
+# All five are published together in one push: ghaction-github-pages replaces the whole branch, so a
 # second workflow pushing to "output" would delete this one's files.
 name: Generate profile images
 
@@ -56,6 +59,15 @@ jobs:
           path: dist/github-top-langs.svg
           token: ${{ secrets.STATS_TOKEN }}
           fail_on_error: "true"
+
+      # Same colours as the card it replaces. The action exits with an error instead of writing an
+      # error card, so a failed fetch also leaves yesterday's card on the output branch.
+      - name: Generate the streak card
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          options: user=${{ github.repository_owner }}&background=100D25&border=362566&stroke=362566&ring=915EFF&fire=56CCF2&currStreakNum=F3F3F3&sideNums=F3F3F3&currStreakLabel=56CCF2&sideLabels=AAA6C3&dates=AAA6C3&border_radius=16
+          path: dist/github-streak.svg
+          token: ${{ secrets.STATS_TOKEN }}
 
       - name: Publish to the output branch
         uses: crazy-max/ghaction-github-pages@v5
