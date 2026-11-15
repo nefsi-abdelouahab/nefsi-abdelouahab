@@ -45,7 +45,7 @@ jobs:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&bg_color=100D25&title_color=F3F3F3&text_color=AAA6C3&icon_color=56CCF2&ring_color=915EFF&border_color=362566&border_radius=16
           path: dist/github-stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
           fail_on_error: "true"
 
       - name: Generate the top-languages card
@@ -54,7 +54,7 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&bg_color=100D25&title_color=F3F3F3&text_color=AAA6C3&border_color=362566&border_radius=16
           path: dist/github-top-langs.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.STATS_TOKEN }}
           fail_on_error: "true"
 
       - name: Publish to the output branch
