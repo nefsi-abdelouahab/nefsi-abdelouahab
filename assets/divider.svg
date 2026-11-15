@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="28" viewBox="0 0 800 28" role="img" aria-labelledby="title desc">
+<title id="title">Section divider</title>
+<desc id="desc">A thin violet-to-cyan line with a light travelling along it.</desc>
+<style>
+.sans{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
+.rise{animation:rise .7s cubic-bezier(.22,1,.36,1) both}
+.fadein{animation:fadein .6s ease-out both}
+.float{animation:float 5s ease-in-out infinite}
+.drift{animation:drift 11s ease-in-out infinite alternate}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(-26px,16px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+.spark{animation:spark 7s cubic-bezier(.45,0,.55,1) infinite}
+@keyframes spark{0%{transform:translateX(0)}70%,100%{transform:translateX(940px)}}
+.pulse{transform-box:fill-box;transform-origin:center;opacity:0;animation:pulse 3.5s ease-out infinite}
+@keyframes pulse{0%{opacity:.8;transform:scale(.8)}60%,100%{opacity:0;transform:scale(2.2)}}
+</style>
+<defs>
+  <linearGradient id="nf-base" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="800" y2="0">
+    <stop offset="0" stop-color="#915EFF" stop-opacity="0"/>
+    <stop offset=".2" stop-color="#915EFF" stop-opacity=".55"/>
+    <stop offset=".5" stop-color="#56CCF2" stop-opacity=".75"/>
+    <stop offset=".8" stop-color="#915EFF" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#915EFF" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="nf-spark" x1="0" x2="1">
+    <stop offset="0" stop-color="#56CCF2" stop-opacity="0"/>
+    <stop offset=".55" stop-color="#56CCF2"/>
+    <stop offset="1" stop-color="#915EFF" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="nf-fade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="800" y2="0">
+    <stop offset="0" stop-color="#000"/><stop offset=".18" stop-color="#FFF"/><stop offset=".82" stop-color="#FFF"/><stop offset="1" stop-color="#000"/>
+  </linearGradient>
+  <mask id="nf-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="800" height="28"><rect width="800" height="28" fill="url(#nf-fade)"/></mask>
+</defs>
+<rect x="0" y="13.5" width="378.0" height="1" fill="url(#nf-base)"/>
+<rect x="422.0" y="13.5" width="378.0" height="1" fill="url(#nf-base)"/>
+<g mask="url(#nf-mask)"><rect class="spark" x="-140" y="13" width="140" height="2" rx="1" fill="url(#nf-spark)"/></g>
+<circle cx="386.0" cy="14" r="1.6" fill="#915EFF"/>
+<circle cx="414.0" cy="14" r="1.6" fill="#915EFF"/>
+<circle class="pulse" cx="400.0" cy="14" r="5" fill="none" stroke="#56CCF2" stroke-width="1.2"/>
+<rect x="396.5" y="10.5" width="7" height="7" rx="1" fill="#915EFF" transform="rotate(45 400.0 14)"/>
+</svg>

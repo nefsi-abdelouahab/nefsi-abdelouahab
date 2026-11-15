@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164" height="52" viewBox="0 0 164 52" role="img" aria-labelledby="title desc">
+<title id="title">LinkedIn</title>
+<desc id="desc">LinkedIn — connect with Nefsi Abdelouahab</desc>
+<style>
+.sans{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
+.rise{animation:rise .7s cubic-bezier(.22,1,.36,1) both}
+.fadein{animation:fadein .6s ease-out both}
+.float{animation:float 5s ease-in-out infinite}
+.drift{animation:drift 11s ease-in-out infinite alternate}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(-26px,16px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+
+.shine{animation:shine 7s ease-in-out infinite}
+@keyframes shine{0%{transform:translateX(0)}22%,100%{transform:translateX(290px)}}
+</style>
+<defs>
+  <linearGradient id="nf-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151030"/><stop offset="1" stop-color="#100D25"/></linearGradient>
+  <linearGradient id="nf-shine" x1="0" x2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".16"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient>
+  <linearGradient id="nf-edge" x1="0" x2="1"><stop offset="0" stop-color="#915EFF"/><stop offset="1" stop-color="#56CCF2"/></linearGradient>
+  <clipPath id="nf-btn"><rect width="164" height="52" rx="14"/></clipPath>
+</defs>
+<g clip-path="url(#nf-btn)">
+  <rect width="164" height="52" fill="url(#nf-bg)"/>
+  <g class="shine" style="animation-delay:1.6s"><rect x="-70" y="-10" width="46" height="72" fill="url(#nf-shine)" transform="skewX(-20)"/></g>
+</g>
+<rect x=".5" y=".5" width="163" height="51" rx="13.5" fill="none" stroke="url(#nf-edge)" stroke-opacity=".55"/>
+<g class="rise" style="animation-delay:0.18s">
+  <rect x="10" y="10" width="32" height="32" rx="9" fill="#915EFF" fill-opacity=".16" stroke="#915EFF" stroke-opacity=".45"/>
+  <g transform="translate(16.5 16.5) scale(.79)"><circle cx="6.6" cy="6.4" r="2" fill="#56CCF2"/><rect x="4.8" y="9.4" width="3.6" height="10.6" rx=".6" fill="#56CCF2"/><path d="M10.8 9.4h3.4v1.5c.6-1 1.8-1.8 3.5-1.8 2.7 0 3.8 1.7 3.8 4.6V20h-3.6v-5.6c0-1.4-.4-2.3-1.7-2.3-1.3 0-2 .9-2 2.3V20h-3.4z" fill="#56CCF2"/></g>
+  <text x="54" y="24.5" class="sans" font-size="14.5" font-weight="700" fill="#F3F3F3">LinkedIn</text>
+  <text x="54" y="40" class="mono" font-size="10.5" letter-spacing=".8" fill="#AAA6C3">CONNECT</text>
+  <path d="M137 31 145 23M138.5 23h6.5v6.5" fill="none" stroke="#AAA6C3" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="397" viewBox="0 0 500 397" role="img" aria-labelledby="title desc">
+<title id="title">Current focus — roadmap</title>
+<desc id="desc">Current focus: 1. Deepening my understanding of Machine Learning and Data Science. 2. Exploring LLMs, RAG, and AI Agent architectures. 3. Building practical AI-powered applications. 4. Improving software architecture and full-stack engineering skills. 5. Participating in AI/ML projects and research opportunities.</desc>
+<style>
+.sans{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif}
+.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}
+.rise{animation:rise .7s cubic-bezier(.22,1,.36,1) both}
+.fadein{animation:fadein .6s ease-out both}
+.float{animation:float 5s ease-in-out infinite}
+.drift{animation:drift 11s ease-in-out infinite alternate}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes drift{from{transform:translate(0,0)}to{transform:translate(-26px,16px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.grow{transform-box:fill-box;transform-origin:top;animation:grow 1.2s cubic-bezier(.22,1,.36,1) .25s both}@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}.travel{opacity:0;animation:travel 6.0s linear 1.4s infinite}@keyframes travel{0%{opacity:0;transform:translateY(0)}6%{opacity:1}94%{opacity:1}100%{opacity:0;transform:translateY(280px)}}.ring{opacity:0;transform-box:fill-box;transform-origin:center}@keyframes ring{0%{opacity:.7;transform:scale(1)}22%{opacity:0;transform:scale(2.3)}100%{opacity:0;transform:scale(2.3)}}</style>
+<defs>
+  <linearGradient id="nf-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#151030"/><stop offset="1" stop-color="#100D25"/>
+  </linearGradient>
+  <radialGradient id="nf-glow">
+    <stop offset="0" stop-color="#915EFF" stop-opacity=".26"/><stop offset="1" stop-color="#915EFF" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="nf-card"><rect width="500" height="397" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#nf-card)">
+  <rect width="500" height="397" fill="url(#nf-bg)"/>
+  <circle class="drift" cx="460" cy="30" r="130" fill="url(#nf-glow)"/>
+</g>
+<rect x=".5" y=".5" width="499" height="396" rx="15.5" fill="none" stroke="#362566"/>
+<defs><linearGradient id="nf-line" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#915EFF"/><stop offset="1" stop-color="#56CCF2"/></linearGradient></defs>
+<rect x="41" y="40" width="2" height="280" rx="1" fill="#362566"/><rect class="grow" x="41" y="40" width="2" height="280" rx="1" fill="url(#nf-line)"/><g class="travel"><circle cx="42" cy="40" r="7" fill="#56CCF2" fill-opacity=".22"/><circle cx="42" cy="40" r="2.6" fill="#56CCF2"/></g>
+<g class="rise" style="animation-delay:0.30s"><circle class="ring" style="animation:ring 6.0s ease-out 1.40s infinite" cx="42" cy="40" r="7" fill="none" stroke="#56CCF2" stroke-width="1.5"/><circle cx="42" cy="40" r="7.5" fill="#100D25" stroke="#915EFF" stroke-width="2"/><circle cx="42" cy="40" r="3" fill="#56CCF2"/></g>
+<g class="rise" style="animation-delay:0.46s"><circle class="ring" style="animation:ring 6.0s ease-out 3.09s infinite" cx="42" cy="119" r="7" fill="none" stroke="#56CCF2" stroke-width="1.5"/><circle cx="42" cy="119" r="7.5" fill="#100D25" stroke="#915EFF" stroke-width="2"/><circle cx="42" cy="119" r="3" fill="#56CCF2"/></g>
+<g class="rise" style="animation-delay:0.62s"><circle class="ring" style="animation:ring 6.0s ease-out 4.40s infinite" cx="42" cy="180" r="7" fill="none" stroke="#56CCF2" stroke-width="1.5"/><circle cx="42" cy="180" r="7.5" fill="#100D25" stroke="#915EFF" stroke-width="2"/><circle cx="42" cy="180" r="3" fill="#56CCF2"/></g>
+<g class="rise" style="animation-delay:0.78s"><circle class="ring" style="animation:ring 6.0s ease-out 5.71s infinite" cx="42" cy="241" r="7" fill="none" stroke="#56CCF2" stroke-width="1.5"/><circle cx="42" cy="241" r="7.5" fill="#100D25" stroke="#915EFF" stroke-width="2"/><circle cx="42" cy="241" r="3" fill="#56CCF2"/></g>
+<g class="rise" style="animation-delay:0.94s"><circle class="ring" style="animation:ring 6.0s ease-out 7.40s infinite" cx="42" cy="320" r="7" fill="none" stroke="#56CCF2" stroke-width="1.5"/><circle cx="42" cy="320" r="7.5" fill="#100D25" stroke="#915EFF" stroke-width="2"/><circle cx="42" cy="320" r="3" fill="#56CCF2"/></g>
+<g class="rise" style="animation-delay:0.35s"><text x="70" y="45" class="mono" font-size="11.5" letter-spacing="1" fill="#56CCF2">01</text><text x="96" y="45.5" class="sans" font-size="15.5" font-weight="700" fill="#F3F3F3">ML &amp; Data Science</text><text x="96" y="67" class="sans" font-size="13" fill="#AAA6C3">Deepening my understanding of</text><text x="96" y="85" class="sans" font-size="13" fill="#AAA6C3">Machine Learning and Data Science.</text></g>
+<g class="rise" style="animation-delay:0.51s"><text x="70" y="124" class="mono" font-size="11.5" letter-spacing="1" fill="#56CCF2">02</text><text x="96" y="124.5" class="sans" font-size="15.5" font-weight="700" fill="#F3F3F3">LLMs, RAG &amp; AI Agents</text><text x="96" y="146" class="sans" font-size="13" fill="#AAA6C3">Exploring LLMs, RAG, and AI Agent architectures.</text></g>
+<g class="rise" style="animation-delay:0.67s"><text x="70" y="185" class="mono" font-size="11.5" letter-spacing="1" fill="#56CCF2">03</text><text x="96" y="185.5" class="sans" font-size="15.5" font-weight="700" fill="#F3F3F3">AI-Powered Applications</text><text x="96" y="207" class="sans" font-size="13" fill="#AAA6C3">Building practical AI-powered applications.</text></g>
+<g class="rise" style="animation-delay:0.83s"><text x="70" y="246" class="mono" font-size="11.5" letter-spacing="1" fill="#56CCF2">04</text><text x="96" y="246.5" class="sans" font-size="15.5" font-weight="700" fill="#F3F3F3">Software Architecture</text><text x="96" y="268" class="sans" font-size="13" fill="#AAA6C3">Improving software architecture</text><text x="96" y="286" class="sans" font-size="13" fill="#AAA6C3">and full-stack engineering skills.</text></g>
+<g class="rise" style="animation-delay:0.99s"><text x="70" y="325" class="mono" font-size="11.5" letter-spacing="1" fill="#56CCF2">05</text><text x="96" y="325.5" class="sans" font-size="15.5" font-weight="700" fill="#F3F3F3">AI/ML Projects &amp; Research</text><text x="96" y="347" class="sans" font-size="13" fill="#AAA6C3">Participating in AI/ML projects</text><text x="96" y="365" class="sans" font-size="13" fill="#AAA6C3">and research opportunities.</text></g>
+</svg>
