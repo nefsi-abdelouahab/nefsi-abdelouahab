@@ -80,7 +80,6 @@
   <img src="./assets/skills-tools.svg" width="380" alt="Tools and practices: Git, GitHub, Jira, ClickUp, Figma, Linux, API Integration, Testing, Debugging, Agile Scrum, Specification-Driven Development. AI-assisted development: Claude Code, OpenSpec, Prompt-Driven Development">
 </p>
 
-<p align="center"><sub>Tech icons from <a href="https://skillicons.dev">skillicons.dev</a> and <a href="https://simpleicons.org">Simple Icons</a>.</sub></p>
 
 <img src="./assets/divider.svg" width="100%" alt="">
 
